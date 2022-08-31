@@ -1,0 +1,23 @@
+﻿@model BoschSpot.App.ViewModels.GroupsWithCategoryIDViewModel
+
+@if (Model.Contenders.Count() > 0)
+{
+<div class="d-flex flex-column">
+    <div class="text-center m-4">
+        <h1>BoschSpot Handboek</h1>
+    </div>
+    @foreach (var contender in Model.Contenders)
+    {
+        <div class="btn-group m-4">
+            <a asp-controller="Handbook" asp-route-ID="@contender.ID" asp-action="Contender"
+               class="btn p-3 text-center rounded-pill font-weight-bold d-flex justify-content-between align-items-center border-dark"
+               style="background-color:#A7C6D1"><img src="@contender.PhotoUrl" class="rounded-circle" style="height:40px; max-width:40px; object-fit:cover;">@contender.Name<i style="font-size:30px; color:black;" class="fas fa-angle-right"></i></a>
+        </div>
+    }
+    <div class="btn-group m-4">
+        <a asp-controller="Handbook" asp-route-ID="@Model.CategoryID" asp-action="Groups"
+           class="btn p-3 text-center rounded-pill font-weight-bold d-flex justify-content-between align-items-center border-dark"
+           style="background-color:#A7C6D1"><i style="font-size:30px; color:black;" class="fas fa-angle-left"></i>Groepen</a>
+    </div>
+</div>
+}

@@ -1,0 +1,101 @@
+﻿.home-banner {
+    background-image: url(/Img/Bee-Home.jpg);
+    min-height: 200px;
+    background-position: 0% 60%;
+}
+
+.home-container {
+    margin: 320px 0px;
+}
+
+.home-banner-blur {
+    min-height: 200px;
+}
+
+.icon {
+    max-height: 50px;
+    max-width: auto;
+}
+
+.right-col {
+    min-height: 100%;
+}
+
+.info-div-long {
+    min-height: 100%;
+}
+
+.profile {
+    border: 1px solid black;
+    border-radius: 100%;
+    overflow: hidden;
+    min-height: 80px;
+    min-width: 80px;
+    margin-right: 20px;
+}
+
+.footer-logo {
+    max-height: 35px;
+    max-width: auto;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.home-footer-dev {
+    margin: 5px;
+    padding: 25px;
+}
+
+.home-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.home-footer-div {
+    background-color: #A7D1A7;
+    border: 1px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+}
+
+@media(max-width: 760px) {
+
+    .home-container {
+        margin-bottom: 0px;
+    }
+    .profile {
+        max-height: 20px;
+        max-width: 20px;
+    }
+
+    .home-footer {
+        position: relative;
+    }
+
+    .home-footer-div {
+        flex-direction: column;
+    }
+
+    .home-banner {
+        background-image: url(/Img/Flower-Home.jpg);
+        min-height: 250px;
+        background-position: 0% 50%;
+    }
+
+    .home-banner-blur {
+        min-height: 250px;
+    }
+
+    .icon {
+        max-height: 25px;
+        max-width: auto;
+    }
+}

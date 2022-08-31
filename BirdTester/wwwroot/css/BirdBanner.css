@@ -1,0 +1,407 @@
+﻿.banner[data-bird="Boomklever"] {
+    background-position: 0% 65%;
+}
+
+.banner[data-bird="Holenduif"] {
+    background-position: 0% 15%
+}
+
+.banner[data-bird="Turkse Tortel"] {
+    background-position: 0% 20%
+}
+
+.banner[data-bird="Zomertortel"] {
+    background-position: 0% 10%
+}
+
+.banner[data-bird="Wilde eend"] {
+    background-position: 0% 10%;
+}
+
+.banner[data-bird="Grauwe Gans"] {
+    background-position: 0% 10%;
+}
+
+.banner[data-bird="Grote Canadese Gans"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Kuifeend"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Krakeend"] {
+    background-position: 0% 50%;
+}
+
+.banner[data-bird="Wintertaling"] {
+    background-position: 0% 45%
+}
+
+.banner[data-bird="Slobeend"] {
+    background-position: 0% 30%
+}
+
+.banner[data-bird="Tafeleend"] {
+    background-position: 0% 45%
+}
+
+.banner[data-bird="Pijlstaart"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Zomertaling"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Fuut"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Dodaars"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Brandgans"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Gierzwaluw"] {
+    background-position: 0% 55%;
+}
+
+.banner[data-bird="Rietgors"] {
+    background-position: 0% 40%
+}
+
+.banner[data-bird="Goudhaan"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Vuurgoudhaan"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Grasmus"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Braamsluiper"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Braamsluiper"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Fazant"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Lepelaar"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Ijsvogel"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Steltkluut"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Zwarte kraai"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Gaai"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Ekster"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Kauw"] {
+    background-position: 0% 10%;
+}
+
+.banner[data-bird="Boompieper"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Witte kwikstaart"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Gele kwikstaart"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Grote gele kwikstaart"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Boomleeuwerik"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Veldleeuwerik"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Merel"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Beflijster"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Kramsvogel"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Zwartkopmeeuw"] {
+    background-position: 0% 55%;
+}
+
+.banner[data-bird="Kleine mantelmeeuw"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Zilvermeeuw"] {
+    background-position: 0% 35%
+}
+
+.banner[data-bird="Koolmees"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Pimpelmees"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Kuifmees"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Matkop"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Huismus"] {
+    background-position: 0% 20%;
+}
+
+.banner[data-bird="Ooievaar"] {
+    background-position: 0% 15%
+}
+
+.banner[data-bird="Kievit"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Kleine Plevier"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Meerkoet"] {
+    background-position: 0% 50%;
+}
+
+.banner[data-bird="Porseleinhoen"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Waterral"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Blauwe reiger"] {
+    background-position: -500px 15%;
+}
+
+.banner[data-bird="Grote zilverreiger"] {
+    background-position: 0% 20%;
+}
+
+.banner[data-bird="Roerdomp"] {
+    background-position: 0% 55%
+}
+
+.banner[data-bird="Kleine karekiet"] {
+    background-position: 0% 65%;
+}
+
+.banner[data-bird="Bosrietzanger"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Rietzanger"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Scholekster"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Grote Bonte Specht"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Groene specht"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Middelste Bonte Specht"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Kleine bonte specht"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Zwarte specht"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Buizerd"] {
+    background-position: 0% 55%;
+}
+
+.banner[data-bird="Havik"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Bruine Kiekendief"] {
+    background-position: 0% 70%;
+}
+
+.banner[data-bird="Zeearend"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Spreeuw"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Snor"] {
+    background-position: 0% 60%;
+}
+
+.banner[data-bird="Staartmees"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Groenpootruiter"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Witgat"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Watersnip"] {
+    background-position: 0% 10%;
+}
+
+.banner[data-bird="Zwarte Ruiter"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Bosruiter"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Tureluur"] {
+    background-position: 0% 30%; 
+}
+
+.banner[data-bird="Oeverloper"] {
+    background-position: 0% 55%;
+}
+
+.banner[data-bird="Houtsnip"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Kemphaan"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Cetti’s zanger"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Baardman"] {
+    background-position: 200px 35%;
+}
+
+.banner[data-bird="Torenvalk"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Vink"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Appelvink"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Goudvink"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Sijs"] {
+    background-position: 0% 30%;
+}
+
+.banner[data-bird="Groenling"] {
+    background-position: 0% 35%;
+}
+
+.banner[data-bird="Kruisbek"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Roodborst"]{
+    background-position: 0% 20%;
+}
+
+.banner[data-bird="Roodborsttapuit"] {
+    background-position: 0% 15%;
+}
+
+.banner[data-bird="Gekraagde Roodstaart"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Bonte Vliegenvanger"] {
+    background-position: 0% 55%;
+}
+
+.banner[data-bird="winterkoning"] {
+    background-position: 0% 40%;
+}
+
+.banner[data-bird="Fitis"] {
+    background-position: 0% 20%;
+}
+
+.banner[data-bird="Blauwborst"] {
+    background-position: -100px 50%;
+}
+
+.banner[data-bird="Tuinfluiter"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Boerenzwaluw"] {
+    background-position: 0% 45%;
+}
+
+.banner[data-bird="Huiszwaluw"] {
+    background-position: 0% 30%;
+}

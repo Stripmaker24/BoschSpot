@@ -1,0 +1,130 @@
+﻿.nav-text {
+    color: #703006;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.background-blur {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.nav-text:hover{
+    text-decoration: none;
+    color: #AD4545;
+}
+
+.info-div {
+    background-color: #A7D1A7;
+    border: 1px solid black;
+    padding: 25px;
+    text-align: center;
+}
+
+.info-div-left {
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.info-div-right {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.info-div-glass {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: whitesmoke;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner {
+    position: absolute;
+    top: 74px;
+    left: 0px;
+    background-position: 50% 25%;
+    height: 100px;
+    width: 100vw;
+    max-width: 100%;
+    background-size: cover;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: -1;
+}
+
+.banner-blur {
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 74px;
+    left: 0px;
+    height: 100px;
+    width: 100vw;
+    max-width: 100%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-shadow: 0px 3px rgba(0,0,0,0.2);
+}
+
+.btn-yellow {
+    background-image: linear-gradient(to right, #F9F576, #DCBF2D);
+    text-shadow: none;
+}
+
+.btn-green {
+    background-image: linear-gradient(to right, #95F895, #A7D1A7);
+    text-shadow: none;
+}
+
+@media (max-width: 760px) {
+
+    body {
+        position: relative;
+    }
+
+    container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 auto;
+        float: none;
+        height: 100%;
+    }
+
+    .info-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-text {
+        display: block;
+        background-color: #FFF6A5;
+        border: 1px solid black;
+        width: 100%;
+        margin: 0px;
+        height: 30px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 5px 0px;
+    
+    }
+
+    .collapse:not(.show) {
+        display: none !important;
+        
+    }
+}

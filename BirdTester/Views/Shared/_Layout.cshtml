@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] BoschSpot</title>
+    <link rel="icon" href="~/Img/Icon.png">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/general.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar position-fixed w-100 navbar-expand-md navbar-light border-bottom box-shadow" style="z-index:2;">
+            <div class="container" style="margin: 0px; min-width: 95vw;">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/Img/Logo.png" style="max-height: 50px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-md-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-text" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-text" asp-controller="Handbook" asp-action="Index">Handboek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-text" asp-controller="Spot" asp-action="Index">Spots</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-0">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-text" asp-controller="Account" asp-action="Logout">Uitloggen</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-text" asp-controller="Account" asp-action="Login">Inloggen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-text" asp-controller="Account" asp-action="Register">Registreren</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="body">
+        <div class="container">
+            <main role="main" class="pb-3" style="margin-top: 75px;">
+                @RenderBody()
+            </main>
+        </div>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="https://kit.fontawesome.com/b49f2eb1e1.js" crossorigin="anonymous"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+        @RenderSection("Footer", required: false)
+    </div>
+</body>
+</html>

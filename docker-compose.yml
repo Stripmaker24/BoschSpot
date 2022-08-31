@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server:2017-latest"
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=24@BoschSpotDB24
+
+  boschspot.app:
+    image: ${DOCKER_REGISTRY-}boschspotapp
+    build:
+      context: .
+      dockerfile: BirdTester/Dockerfile
+    depends_on:
+     - db

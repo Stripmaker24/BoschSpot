@@ -1,0 +1,42 @@
+﻿.bird-banner {
+    position: absolute;
+    top: 74px;
+    left: 0px;
+    background-position: 50% 25%;
+    min-height: 100px;
+    min-width: 100vw;
+    background-size: cover;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: -1;
+}
+
+.bird-banner-blur {
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 74px;
+    left: 0px;
+    min-height: 100px;
+    min-width: 100vw;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-shadow: 0px 3px rgba(0,0,0,0.2);
+}
+
+.bird-photo {
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.bird-left {
+    width: 50%;
+}
+
+@media (max-width: 760px) {
+    .bird-left {
+        width: 100%;
+    }
+}

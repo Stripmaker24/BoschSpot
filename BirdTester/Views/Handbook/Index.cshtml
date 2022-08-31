@@ -1,0 +1,15 @@
+﻿@model IEnumerable<BoschSpot.Data.Models.CategoryModel>
+
+<div class="d-flex flex-column">
+    <div class="text-center m-4">
+        <h1>BoschSpot Handboek</h1>
+    </div>
+    <div class="btn-group d-flex flex-column">
+        @foreach (var category in Model)
+        {
+            <a asp-controller="Handbook" asp-route-ID="@category.ID" asp-action="Groups"
+               class="btn m-4 p-3 text-left rounded-pill font-weight-bold d-flex justify-content-between align-items-center border-dark"
+               style="background-color:#A7C6D1">@category.Category<i style="font-size:30px; color:black;" class="fas fa-angle-right"></i></a>
+        }
+    </div>
+</div>

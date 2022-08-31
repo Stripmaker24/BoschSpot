@@ -1,0 +1,97 @@
+﻿<link rel="stylesheet" href="~/css/homePage.css" />
+<div class="banner home-banner"></div>
+<div class="banner-blur home-banner-blur text-center text-white shadow">
+    <br>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h1>Welkom terug @User.Identity.Name!</h1>
+        <p>Al veel gespot vandaag?</p>
+        <div class="w-100 d-flex justify-content-center">
+            <a class="btn w-50 btn-yellow p-1 text-left rounded-pill d-flex justify-content-center align-items-center border-dark" asp-controller="Spot" asp-action="FastCreate" style="font-weight:600">Nieuwe Spot!</a>
+        </div>
+    }
+    else
+    {
+        <h1>Spotters gezocht!</h1>
+        <p>Help jij ons met het spotten van vogels in s-Hertogenbosch?</p>
+        <div class="w-100 d-flex justify-content-center">
+            <a class="btn w-50 btn-yellow p-1 text-left rounded-pill d-flex justify-content-center align-items-center border-dark" asp-controller="Account" asp-action="Register" style="font-weight:600">Registreer nu!</a>
+        </div>
+    }
+</div>
+<div class="container home-container p-1">
+    <div class="info-container">
+        <div class="left">
+            <div class="info-div info-div-left d-flex flex-row justify-content-center m-4">
+                <div class=" d-flex flex-column justify-content-between mr-5">
+                    <img class="icon" src="~/Img/Shot.png">
+                    <img class="icon" src="~/Img/search.png">
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                    <h6>Maak en upload foto's</h6>
+                    <br>
+                    <h6>Verzamel punten en bouw een collectie</h6>
+                    <br>
+                    <h6>Leer en help ons onderzoeken</h6>
+                </div>
+                <div class="d-flex flex-column justify-content-center ml-5">
+                    <img class="icon" src="~/Img/picture.png">
+                </div>
+            </div>
+            <div class="info-div info-div-left d-flex flex-column text-center m-4">
+                <h5>Help met echt onderzoek!</h5>
+                <p>
+                    Wanneer er veel gespot wordt kunnen echte onderzoekers gebruik maken van de gegevens voor hun eigen onderzoek. Zij kunnen met behulp van de spots zien waar vogels in de stad leven en hoe het leven van deze vogels verbeterd kan worden. Daarnaast kan worden onderzocht waar vogels niet leven en hoe daar de populatie misschien kan groeien.
+                </p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="info-div info-div-right d-flex flex-column justify-content-center m-4">
+                <h2>Ben jij een echte top spotter?</h2>
+                <br>
+                <p>Het onderzoeksteam van BoschSpot doet onderzoek naar dieren in de stad ’s-Hertogenbosch, echter hebben zij niet de vaardigheden om goede foto’s te maken van de dieren die ze tegenkomen. Heb jij die wel? Laat het ons zien door mee te doen aan dit spel!</p>
+                <p>Het spel is simpel, maak een foto van een vogel in de buurt van ’s-Hertogenbosch, upload hem op de website en verdien punten om in hogere levels te komen.</p>
+                <p>Bouw een eigen collectie van foto’s op en deel deze eventueel met andere spelers.</p>
+                <p>Zin in een uitdaging? Probeer dan onze Challenges te voltooien voor extra punten of daag je vrienden uit in een lokale competitie.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Footer
+{ 
+    <footer class="home-footer-container">
+        <div class="home-footer">
+            <div class="home-footer-div">
+                <div class="home-footer-dev">
+                    <div class="w-100 text-center">
+                        <h4>Michelle van Setten</h4>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex">
+                            <img class="profile" src="~/Img/profile.png">
+                            <p class="footer-text">Hoi, ik ben Michelle. Ik ben een derdejaars informatica student van de Hogeschool Avans. Samen met het IoT Stadslab heb ik BoschSpot ontwikkeld. Met dit natuureducatie spel hoop ik de biodiversiteit van 's-Hertogenbosch bekender te maken. Mijn andere werk is terug te vinden op mijn persoonlijke website. </p>
+                        </div>
+                        <div class=" w-100 d-flex justify-content-center">
+                            <a class="btn w-50 btn-yellow p-1 text-left rounded-pill d-flex justify-content-center align-items-center border-dark" href="https://stripmaker24.github.io/Portfolio/">Naar website</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-footer-dev">
+                    <div class="w-100 d-flex justify-content-center">
+                        <img class="footer-logo" src="~/Img/IOT-Logo.png">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div>
+                        <p class="footer-text">In het IoT Stadslab werken gemeente ’s-Hertogenbosch, het bedrijfsleven en het onderwijs samen aan maatschappelijke vraagstukken met als doel het verslimmen van de buitenruimte. In het Stadslab vinden regelmatig kennissessies plaats waardoor nieuwe samenwerkingen tot stand komen. Meer weten check onze website.</p>
+                        </div>
+                        <div class=" w-100 d-flex justify-content-center">
+                            <a class="btn w-50 btn-yellow p-1 text-left rounded-pill d-flex justify-content-center align-items-center border-dark" href="https://www.denbosch.nl/nl/projecten/spoorzone/iot-stadslab">Naar website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+}

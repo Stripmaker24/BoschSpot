@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BoschSpot.Data.Models.GroupsModel>
+@if (Model.Count() > 0)
+{
+<div class="d-flex flex-column">
+    <div class="text-center m-4">
+        <h1>BoschSpot Handboek</h1>
+    </div>
+    <div class="btn-group m-4">
+        <a asp-controller="Handbook" asp-action="GroupList"
+           class="btn p-3 text-left rounded-pill font-weight-bold d-flex justify-content-between align-items-center border-dark"
+           style="background-color:#A7C6D1">Alles van deze categorie<i style="font-size:30px; color:black;" class="fas fa-angle-right"></i></a>
+    </div>
+    @foreach (var group in Model)
+    {
+        <div class="btn-group m-4">
+            <a asp-controller="Handbook" asp-route-ID="@group.ID" asp-route-CategoryID="@group.CategoryID" asp-action="GroupList"
+               class="btn p-3 text-left rounded-pill font-weight-bold d-flex justify-content-between align-items-center border-dark"
+               style="background-color:#A7C6D1">@group.Group<i style="font-size:30px; color:black;" class="fas fa-angle-right"></i></a>
+        </div>
+    }
+    <div class="btn-group m-4">
+        <a asp-controller="Handbook" asp-action="Index"
+           class="btn p-3 text-left rounded-pill font-weight-bold d-flex justify-content-between align-items-center border-dark"
+           style="background-color:#A7C6D1"><i style="font-size:30px; color:black;" class="fas fa-angle-left"></i>Terug naar hoofdgroepen</a>
+    </div>
+</div>
+}
+else
+{
+<div class="d-flex flex-column">
+    <div class="text-center m-4">
+        <h1>BoschSpot Handboek</h1>
+    </div>
+    <div class="w-100 text-center">
+        <h2 class="m-4">Oeps! Van deze categorie zijn nog geen deelnemers, het spijt ons.</h2>
+    </div>
+    <div class="btn-group m-4">
+        <a asp-controller="Handbook" asp-action="Index"
+           class="btn p-3 text-left rounded-pill font-weight-bold d-flex justify-content-between align-items-center border-dark"
+           style="background-color:#A7C6D1"><i style="font-size:30px; color:black;" class="fas fa-angle-left"></i>Terug naar hoofdgroepen</a>
+    </div>
+</div>
+}
+
